@@ -20,4 +20,4 @@ Permite documentar el fundamento de las principales decisiones de diseño arquit
 - Patrones Arquitectónicos
 
 
-![](https://drive.google.com/file/d/0B7-uslfzeAxtYXFGX3NSYXRIZlU/view?usp=sharing)
+![](![](https://i.ibb.co/WvFWZky/Rationale.png))
