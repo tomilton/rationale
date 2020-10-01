@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/rationale/src" modelPluginID="rationale" modelName="Rationale"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>rationale.ecore</foreignModel>
+  <genPackages prefix="Rationale" basePackage="org.architectural" resource="XML" disposableProviderFactory="true"
+      ecorePackage="rationale.ecore#/">
+    <genClasses ecoreClass="rationale.ecore#//ArchitecturalRationale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalRationale/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_J"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_C"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_R"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_A"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_Cq"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_Ad"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_S"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_T"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalRationale/A_Have_P"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//Context">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Context/ContextName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Context/ContextDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//Justification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Justification/JustificationName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Justification/JustificationDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//Alternative">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Alternative/AlternativeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Alternative/AlternativeDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//Rationale">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Rationale/RationaleName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Rationale/RationaleDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//Rationale/Rationale_Has_Context"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//Rationale/Rationale_Has_Justification"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//Rationale/Rationale_Has_Alternative"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//Rationale/Rationale_Has_Consequence"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//Rationale/Rationale_Has_ArchitecturalDecision"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//Consequence">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Consequence/ConsequenceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Consequence/ConsequenceDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Consequence/pro"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//Consequence/con"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//ArchitecturalDecision">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalDecision/ArchitecturalDecisionName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalDecision/ArchitecturalDecisionDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalDecision/ArchitecturalDecision_Has_ArchitecturalPattern"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalDecision/ArchitecturalDecision_Has_ArchitecturalTactic"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference rationale.ecore#//ArchitecturalDecision/ArchitecturalDecision_Has_ArchitecturalStrategy"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//ArchitecturalPattern">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalPattern/ArchitecturalPatternName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalPattern/ArchitecturalPatternDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//ArchitecturalTactic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalTactic/ArchitecturalTacticName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalTactic/ArchitecturalTacticDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="rationale.ecore#//ArchitecturalStrategy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalStrategy/ArchitecturalStrategyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute rationale.ecore#//ArchitecturalStrategy/ArchitecturalStrategyDescription"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

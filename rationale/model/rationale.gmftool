@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="rationalePalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="rationale">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Justification"
+          description="Create new Justification">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Tactic"
+          description="Create new ArchitecturalTactic">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Strategy"
+          description="Create new ArchitecturalStrategy">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Decision"
+          description="Create new ArchitecturalDecision">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Alternative"
+          description="Create new Alternative">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Pattern"
+          description="Create new ArchitecturalPattern">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rationale"
+          description="Create new Rationale">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Context"
+          description="Create new Context">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Consequence"
+          description="Create new Consequence">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rationale Has Context"
+          description="Create new RationaleRationale_Has_Context">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Context.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Context.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rationale Has Justification"
+          description="Create new RationaleRationale_Has_Justification">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Justification.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Justification.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rationale Has Alternative"
+          description="Create new RationaleRationale_Has_Alternative">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Alternative.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Alternative.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rationale Has Consequence"
+          description="Create new RationaleRationale_Has_Consequence">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Consequence.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_Consequence.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rationale Has Architectural Decision"
+          description="Create new RationaleRationale_Has_ArchitecturalDecision">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_ArchitecturalDecision.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/Rationale_Has_ArchitecturalDecision.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Decision Has Architectural Pattern"
+          description="Create new ArchitecturalDecisionArchitecturalDecision_Has_ArchitecturalPattern">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/ArchitecturalDecision_Has_ArchitecturalPattern.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/ArchitecturalDecision_Has_ArchitecturalPattern.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Decision Has Architectural Tactic"
+          description="Create new ArchitecturalDecisionArchitecturalDecision_Has_ArchitecturalTactic">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/ArchitecturalDecision_Has_ArchitecturalTactic.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/ArchitecturalDecision_Has_ArchitecturalTactic.png"
+            bundle="rationale.edit"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Architectural Decision Has Architectural Strategy"
+          description="Create new ArchitecturalDecisionArchitecturalDecision_Has_ArchitecturalStrategy">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/ArchitecturalDecision_Has_ArchitecturalStrategy.png"
+            bundle="rationale.edit"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="icons/full/obj16/ArchitecturalDecision_Has_ArchitecturalStrategy.png"
+            bundle="rationale.edit"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

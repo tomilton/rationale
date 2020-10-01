@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="rationale" nsURI="http://rationale/1.0" nsPrefix="rationale">
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitecturalRationale">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_J" lowerBound="4"
+        upperBound="-1" eType="#//Justification" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_C" lowerBound="1"
+        upperBound="-1" eType="#//Context" containment="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_R" lowerBound="1"
+        upperBound="-1" eType="#//Rationale" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_A" upperBound="-1"
+        eType="#//Alternative" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_Cq" upperBound="-1"
+        eType="#//Consequence" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_Ad" upperBound="-1"
+        eType="#//ArchitecturalDecision" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_S" upperBound="-1"
+        eType="#//ArchitecturalStrategy" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_T" upperBound="-1"
+        eType="#//ArchitecturalTactic" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="A_Have_P" upperBound="-1"
+        eType="#//ArchitecturalPattern" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Context">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ContextName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ContextDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Justification">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="JustificationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="JustificationDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Alternative">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AlternativeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="AlternativeDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rationale">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RationaleName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RationaleDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Rationale_Has_Context"
+        lowerBound="1" eType="#//Context"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Rationale_Has_Justification"
+        lowerBound="4" upperBound="4" eType="#//Justification"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Rationale_Has_Alternative"
+        lowerBound="1" eType="#//Alternative"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Rationale_Has_Consequence"
+        upperBound="-1" eType="#//Consequence"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Rationale_Has_ArchitecturalDecision"
+        lowerBound="1" eType="#//ArchitecturalDecision"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Consequence">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ConsequenceName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ConsequenceDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pro" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="con" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitecturalDecision">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalDecisionName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalDecisionDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ArchitecturalDecision_Has_ArchitecturalPattern"
+        upperBound="-1" eType="#//ArchitecturalPattern"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ArchitecturalDecision_Has_ArchitecturalTactic"
+        upperBound="-1" eType="#//ArchitecturalTactic"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ArchitecturalDecision_Has_ArchitecturalStrategy"
+        upperBound="-1" eType="#//ArchitecturalStrategy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitecturalPattern">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalPatternName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalPatternDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitecturalTactic">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalTacticName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalTacticDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ArchitecturalStrategy">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalStrategyName"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ArchitecturalStrategyDescription"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

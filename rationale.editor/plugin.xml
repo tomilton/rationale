@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated rationale -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.architectural.rationale.presentation.RationaleModelWizardID"
+            name="%_UI_RationaleModelWizard_label"
+            class="org.architectural.rationale.presentation.RationaleModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/RationaleModelFile.gif">
+         <description>%_UI_RationaleModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated rationale -->
+      <editor
+            id="org.architectural.rationale.presentation.RationaleEditorID"
+            name="%_UI_RationaleEditor_label"
+            icon="icons/full/obj16/RationaleModelFile.gif"
+            extensions="rationale"
+            class="org.architectural.rationale.presentation.RationaleEditor"
+            contributorClass="org.architectural.rationale.presentation.RationaleActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

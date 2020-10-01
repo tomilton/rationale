@@ -1,0 +1,7 @@
+# Tracing options for the rationale.diagram plug-in
+
+# Common issues
+rationale.diagram/debug=false
+
+# Visual IDs
+rationale.diagram/debug/visualID=false
