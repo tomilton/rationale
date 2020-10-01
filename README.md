@@ -18,3 +18,6 @@ Permite documentar el fundamento de las principales decisiones de diseño arquit
 - Tácticas Arquitectónicas
 - Estrategias Arquitectónicas
 - Patrones Arquitectónicos
+
+
+![](https://drive.google.com/file/d/0B7-uslfzeAxtYXFGX3NSYXRIZlU/view?usp=sharing)
